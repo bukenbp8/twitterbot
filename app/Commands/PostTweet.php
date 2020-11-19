@@ -38,7 +38,7 @@ class PostTweet extends Command
     public function getTweetText()
     {
         $client = new \GuzzleHttp\Client();
-        $request = $client->get('https://api.openweathermap.org/data/2.5/weather?q=Vienna&units=metric&appid=6c743793a5539486877ce02335831dc3');
+        $request = $client->get('https://api.openweathermap.org/data/2.5/weather?q=Vienna&units=metric&appid=lol');
         $response = $request->getBody();
 
         $data = json_decode($response);
